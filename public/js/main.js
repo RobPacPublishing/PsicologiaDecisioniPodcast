@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const modalContent = modal.querySelector(".episode-detail-container");
     const closeBtn = modal.querySelector(".close");
 
-    fetch('/data/episodes.json')
+    fetch('/episodes.json')
         .then((res) => {
             if (!res.ok) throw new Error("Impossibile caricare episodes.json");
             return res.json();
