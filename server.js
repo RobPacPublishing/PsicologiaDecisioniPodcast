@@ -6,18 +6,18 @@ const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// Rileva la directory attuale (su qualsiasi disco)
 const basePath = path.resolve(__dirname);
 const episodesDir = path.join(basePath, 'content', 'episodes');
 
-console.log("📁 Percorso attivo:", episodesDir);
+if (!fs.existsSync(episodesDir)){
+    fs.mkdirSync(episodesDir, { recursive: true });
+}
 
 app.use(cors());
 app.use('/media', express.static(path.join(basePath, 'content')));
 
 app.get('/api/episodes', (req, res) => {
   const episodes = [];
-
   fs.readdirSync(episodesDir).forEach(dir => {
     const episodePath = path.join(episodesDir, dir);
     const metadataPath = path.join(episodePath, 'metadata.json');
