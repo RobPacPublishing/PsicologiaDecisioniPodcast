@@ -7,18 +7,24 @@ document.addEventListener("DOMContentLoaded", function () {
     const closeBtn = modal.querySelector(".close");
 
     fetch(API_URL)
-        .then((res) => res.json())
+        .then((res) => {
+            if (!res.ok) throw new Error("Impossibile caricare episodes.json");
+            return res.json();
+        })
         .then((episodes) => {
             episodesContainer.innerHTML = "";
 
             episodes.forEach((ep, index) => {
+                const title = ep.metadata?.titolo || `Episodio ${ep.id}`;
+                const subtitle = ep.metadata?.descrizione_breve || "Descrizione non disponibile";
+
                 const card = document.createElement("div");
                 card.className = "episode-card";
                 card.innerHTML = `
-                    <div class="episode-number">${index + 1}</div>
+                    <div class="episode-number">${ep.id}</div>
                     <div class="episode-info">
-                        <h3>${ep.metadata.title || "Episodio"}</h3>
-                        <p>${ep.metadata.subtitle || ""}</p>
+                        <h3>${title}</h3>
+                        <p>${subtitle}</p>
                     </div>
                     <div class="episode-actions">
                         <button class="view-btn"><i class="fas fa-eye"></i></button>
@@ -27,9 +33,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 card.querySelector(".view-btn").addEventListener("click", () => {
                     modalContent.innerHTML = `
-                        <h3>${ep.metadata.title}</h3>
-                        <p><strong>${ep.metadata.subtitle}</strong></p>
-                        <pre style="white-space:pre-wrap;">${ep.script}</pre>
+                        <h3>${title}</h3>
+                        <p><strong>${subtitle}</strong></p>
+                        <pre style="white-space:pre-wrap;">${ep.script || "Nessuno script disponibile."}</pre>
                         ${ep.audio ? `<audio controls src="${ep.audio}"></audio>` : ""}
                     `;
                     modal.style.display = "block";
@@ -37,6 +43,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 episodesContainer.appendChild(card);
             });
+        })
+        .catch((err) => {
+            episodesContainer.innerHTML = `<p style="color:red;">Errore nel caricamento: ${err.message}</p>`;
         });
 
     closeBtn.addEventListener("click", () => {
