@@ -1,0 +1,58 @@
+{
+  "title": "Il Bias di Conferma: L'Arte di Vedere Solo Ciò che Vogliamo Vedere",
+  "number": 3,
+  "slug": "bias-conferma",
+  "description": "In questo episodio esploriamo il bias di conferma, la tendenza a cercare, interpretare e ricordare le informazioni in modo da confermare le nostre convinzioni preesistenti. Scopriremo le basi scientifiche di questo fenomeno, come influisce sulle nostre decisioni quotidiane – dalle opinioni politiche agli acquisti, dalle relazioni personali alle valutazioni professionali – e imparerai cinque strategie efficaci per contrastarlo. Inoltre, proponiamo un esperimento pratico per allenare la mente a considerare genuinamente prospettive alternative.",
+  "short_description": "Perché tendiamo a vedere solo le prove che confermano ciò in cui già crediamo?",
+  "host": "Rob Pac",
+  "duration": "16:30",
+  "publish_date": "",
+  "tags": [
+    "bias di conferma",
+    "bias cognitivi",
+    "pensiero critico",
+    "processo decisionale",
+    "filtro informazioni",
+    "psicologia cognitiva",
+    "mente aperta"
+  ],
+  "resources": [
+    {
+      "title": "The Web of Belief",
+      "author": "W.V.O. Quine & J.S. Ullian",
+      "type": "book",
+      "year": 1978
+    },
+    {
+      "title": "Confirmation Bias: A Ubiquitous Phenomenon in Many Guises",
+      "author": "Raymond S. Nickerson",
+      "type": "research paper",
+      "journal": "Review of General Psychology",
+      "year": 1998
+    },
+    {
+      "title": "Think Again: The Power of Knowing What You Don't Know",
+      "author": "Adam Grant",
+      "type": "book",
+      "year": 2021
+    }
+  ],
+  "audio": {
+    "intro_timing": "00:00 - 00:20",
+    "main_content_timing": "00:20 - 16:00",
+    "outro_timing": "16:00 - 16:30",
+    "background_music": {
+      "intro": "intro_theme.mp3",
+      "science_section": "science_background.mp3",
+      "examples_section": "examples_background.mp3",
+      "strategies_section": "strategies_background.mp3",
+      "outro": "outro_theme.mp3"
+    }
+  },
+  "social_media_content": {
+    "quote1": "La vera forza intellettuale non sta nel difendere tenacemente le proprie convinzioni, ma nell'essere disposti a metterle in discussione.",
+    "quote2": "Il nostro cervello è programmato per farci sentire bene quando troviamo informazioni che confermano ciò in cui crediamo, e a disagio quando le troviamo contraddittorie.",
+    "quote3": "Il bias di conferma funziona come un filtro invisibile che seleziona, interpreta e ricorda le informazioni in modo da rafforzare ciò in cui già crediamo."
+  },
+  "keywords_for_seo": "bias conferma, pregiudizio conferma, pensiero critico, filtraggio informazioni, echo chamber, bolla informativa, decisioni razionali, psicologia cognitiva, Peter Wason"
+}

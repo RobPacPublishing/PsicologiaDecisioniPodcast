@@ -1,0 +1,59 @@
+{
+  "title": "L'Avversione alla Perdita: Perché Odiamo Perdere Più di Quanto Amiamo Vincere",
+  "number": 4,
+  "slug": "avversione-perdita",
+  "description": "In questo episodio esploriamo l'avversione alla perdita, il fenomeno psicologico per cui il dolore di perdere qualcosa è circa due volte più intenso del piacere di guadagnare qualcosa di equivalente. Analizziamo le radici evolutive e neurobiologiche di questo bias, scopriamo come influenza le nostre decisioni finanziarie, relazionali e professionali quotidiane, e condividiamo cinque strategie pratiche per mitigarne l'impatto. L'episodio include anche un esperimento settimanale di decluttering basato sul valore per aiutarti a identificare come l'avversione alla perdita influenza il tuo rapporto con gli oggetti.",
+  "short_description": "Perché è così difficile vendere, lasciare andare o cambiare, anche quando sarebbe nel nostro interesse?",
+  "host": "Rob Pac",
+  "duration": "17:30",
+  "publish_date": "",
+  "tags": [
+    "avversione alla perdita",
+    "teoria del prospetto",
+    "bias cognitivi",
+    "decisioni economiche",
+    "psicologia comportamentale",
+    "effetto dotazione",
+    "costi irrecuperabili"
+  ],
+  "resources": [
+    {
+      "title": "Thinking, Fast and Slow",
+      "author": "Daniel Kahneman",
+      "type": "book",
+      "year": 2011
+    },
+    {
+      "title": "Prospect Theory: An Analysis of Decision under Risk",
+      "author": "Kahneman & Tversky",
+      "type": "research paper",
+      "journal": "Econometrica",
+      "year": 1979
+    },
+    {
+      "title": "Sunk Cost Fallacy: Why We Can't Let Go",
+      "author": "Christopher Olivola",
+      "type": "research paper",
+      "journal": "Psychological Science",
+      "year": 2018
+    }
+  ],
+  "audio": {
+    "intro_timing": "00:00 - 00:20",
+    "main_content_timing": "00:20 - 17:00",
+    "outro_timing": "17:00 - 17:30",
+    "background_music": {
+      "intro": "intro_theme.mp3",
+      "science_section": "science_background.mp3",
+      "examples_section": "examples_background.mp3",
+      "strategies_section": "strategies_background.mp3",
+      "outro": "outro_theme.mp3"
+    }
+  },
+  "social_media_content": {
+    "quote1": "Il dolore di perdere 100€ è psicologicamente più intenso del piacere di guadagnarne 200€. Il nostro cervello è programmato per dare priorità all'evitamento delle perdite.",
+    "quote2": "Spesso le perdite che temiamo hanno un impatto emotivo meno duraturo di quanto immaginiamo, mentre i guadagni potenziali possono migliorare significativamente la nostra vita.",
+    "quote3": "Quando ti trovi bloccato in una situazione per paura di perdere qualcosa, chiediti: 'Se non fossi già in questa situazione, sceglierei attivamente di entrarci?'"
+  },
+  "keywords_for_seo": "avversione perdita, bias cognitivi, teoria prospetto, effetto dotazione, kahneman tversky, decisioni economiche, costi irrecuperabili, fallacia costo sommerso, psicologia comportamentale"
+}

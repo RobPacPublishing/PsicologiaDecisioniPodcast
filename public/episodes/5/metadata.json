@@ -1,0 +1,59 @@
+{
+  "title": "L'Effetto Dunning-Kruger: Quando Non Sappiamo di Non Sapere",
+  "number": 5,
+  "slug": "effetto-dunning-kruger",
+  "description": "In questo episodio esploriamo l'effetto Dunning-Kruger, il fenomeno psicologico per cui le persone con scarse abilità in un determinato ambito tendono a sovrastimare le proprie competenze, mentre gli esperti spesso sottostimano le proprie capacità. Analizziamo le basi scientifiche di questo bias, il suo impatto sulle nostre decisioni personali e professionali, e offriamo cinque strategie concrete per sviluppare una migliore metacognizione. L'episodio include un esperimento pratico della 'Mappa della Competenza' per aiutarti a riconoscere e ampliare i confini della tua consapevolezza.",
+  "short_description": "Perché i principianti sono spesso più sicuri degli esperti? Il curioso paradosso della sovrastima delle competenze.",
+  "host": "Rob Pac",
+  "duration": "18:00",
+  "publish_date": "",
+  "tags": [
+    "effetto dunning-kruger",
+    "bias cognitivi",
+    "metacognizione",
+    "autovalutazione",
+    "psicologia sociale",
+    "competenza",
+    "umiltà intellettuale"
+  ],
+  "resources": [
+    {
+      "title": "Unskilled and Unaware of It: How Difficulties in Recognizing One's Own Incompetence Lead to Inflated Self-Assessments",
+      "author": "Kruger & Dunning",
+      "type": "research paper",
+      "journal": "Journal of Personality and Social Psychology",
+      "year": 1999
+    },
+    {
+      "title": "Why People Fail to Recognize Their Own Incompetence",
+      "author": "David Dunning",
+      "type": "research paper",
+      "journal": "Current Directions in Psychological Science",
+      "year": 2003
+    },
+    {
+      "title": "Think Again: The Power of Knowing What You Don't Know",
+      "author": "Adam Grant",
+      "type": "book",
+      "year": 2021
+    }
+  ],
+  "audio": {
+    "intro_timing": "00:00 - 00:20",
+    "main_content_timing": "00:20 - 17:30",
+    "outro_timing": "17:30 - 18:00",
+    "background_music": {
+      "intro": "intro_theme.mp3",
+      "science_section": "science_background.mp3",
+      "examples_section": "examples_background.mp3",
+      "strategies_section": "strategies_background.mp3",
+      "outro": "outro_theme.mp3"
+    }
+  },
+  "social_media_content": {
+    "quote1": "L'abilità che permette di produrre risposte corrette è spesso la stessa che serve per valutare la correttezza delle risposte. Ecco perché è così difficile riconoscere la propria incompetenza.",
+    "quote2": "Paradossalmente, più impariamo in un campo, più tendiamo a riconoscere quanto ancora ci sia da imparare. 'So di non sapere' - questa consapevolezza è l'inizio della vera sapienza.",
+    "quote3": "La vera competenza in un campo porta spesso a riconoscere le sfumature e le complessità, mentre la conoscenza superficiale genera certezze semplificatorie."
+  },
+  "keywords_for_seo": "effetto dunning-kruger, bias cognitivi, illusione di competenza, sovrastima abilità, metacognizione, psicologia sociale, autovalutazione, umiltà intellettuale, miglioramento personale"
+}

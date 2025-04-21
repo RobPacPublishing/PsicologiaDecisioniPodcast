@@ -1,0 +1,48 @@
+{
+  "title": "L'Euristica della Disponibilità: Perché Temiamo Squali Più degli Incidenti Domestici",
+  "number": 1,
+  "slug": "euristica-disponibilita",
+  "description": "In questo episodio esploriamo l'euristica della disponibilità, un bias cognitivo che ci porta a sovrastimare la probabilità di eventi facilmente richiamabili alla memoria, come attacchi di squali, e a sottostimare pericoli più comuni ma meno drammatici.",
+  "short_description": "Perché temiamo più gli squali che la doccia, sebbene questa sia statisticamente più pericolosa?",
+  "host": "Rob Pac",
+  "duration": "15:00",
+  "publish_date": "",
+  "tags": [
+    "euristica della disponibilità",
+    "bias cognitivi",
+    "percezione del rischio",
+    "psicologia",
+    "decisioni",
+    "kahneman",
+    "tversky"
+  ],
+  "resources": [
+    {
+      "title": "Thinking, Fast and Slow",
+      "author": "Daniel Kahneman",
+      "type": "book"
+    },
+    {
+      "title": "Judgment under Uncertainty: Heuristics and Biases",
+      "author": "Tversky & Kahneman",
+      "type": "research paper",
+      "year": 1974
+    }
+  ],
+  "audio": {
+    "intro_timing": "00:00 - 00:20",
+    "main_content_timing": "00:20 - 14:30",
+    "outro_timing": "14:30 - 15:00",
+    "background_music": {
+      "intro": "intro_theme.mp3",
+      "main": "deep_thought.mp3",
+      "outro": "outro_theme.mp3"
+    }
+  },
+  "social_media_content": {
+    "quote1": "Ti sei mai chiesto perché temiamo di più un attacco di squalo rispetto a scivolare nella vasca da bagno?",
+    "quote2": "Ciò che ricordiamo facilmente è spesso determinato non dalla reale frequenza degli eventi, ma da quanto sono drammatici.",
+    "quote3": "Per ogni incidente aereo di cui senti parlare, ci sono milioni di voli sicuri di cui non senti mai nulla."
+  },
+  "keywords_for_seo": "euristica disponibilità, bias cognitivi, percezione rischio, decisioni razionali, psicologia comportamentale, pensiero statistico, paura irrazionale"
+}

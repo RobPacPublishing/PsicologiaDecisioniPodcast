@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psicologia delle Decisioni Quotidiane - Podcast Manager</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div id="app-container">
+        <header>
+            <h1>Psicologia delle Decisioni Quotidiane</h1>
+            <h2>Come Pensiamo Senza Pensare</h2>
+            <p>Podcast Manager</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#" class="active" data-section="episodes"><i class="fas fa-list"></i> Episodi</a></li>
+                <li><a href="#" data-section="assets"><i class="fas fa-music"></i> Asset</a></li>
+                <li><a href="#" data-section="calendar"><i class="fas fa-calendar"></i> Calendario</a></li>
+                <li><a href="#" data-section="export"><i class="fas fa-file-export"></i> Esporta</a></li>
+                <li><a href="#" id="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="episodes" class="active">
+                <h2>Episodi Disponibili</h2>
+                <div class="search-bar">
+                    <input type="text" id="episode-search" placeholder="Cerca episodi...">
+                    <button id="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="episodes-container"></div>
+            </section>
+
+            <section id="assets" style="display:none;">
+                <h2>Asset Multimedia</h2>
+                <p>Sezione in costruzione</p>
+            </section>
+
+            <section id="calendar" style="display:none;">
+                <h2>Calendario</h2>
+                <p>Sezione in costruzione</p>
+            </section>
+
+            <section id="export" style="display:none;">
+                <h2>Esporta</h2>
+                <p>Sezione in costruzione</p>
+            </section>
+        </main>
+
+        <div id="episode-detail-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Dettaglio Episodio</h2>
+                <div class="episode-detail-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/js/main.js"></script>
+</body>
+</html>

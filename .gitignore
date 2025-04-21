@@ -1,0 +1,57 @@
+# File system
+.DS_Store
+Thumbs.db
+
+# IDE e editor
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# File temporanei
+*.tmp
+*.temp
+*~
+
+# Log e debug
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Directory di output
+/exports/
+/dist/
+/build/
+
+# File di ambiente
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Dipendenze e moduli
+/node_modules/
+/bower_components/
+
+# File audio generati temporaneamente
+*.mp3.temp
+*.wav.temp
+
+# Cache
+.cache/
+.firebase/
+
+# File di configurazione locale
+firebase-debug.log
+firebase-debug.*.log
+
+# File di backup
+*.bak
+*.backup
+*_backup.*
+
+# Output di build
+/public/build/
+.vercel

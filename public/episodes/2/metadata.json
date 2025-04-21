@@ -1,0 +1,53 @@
+{
+  "title": "L'Effetto Ancoraggio: Come un Numero Casuale Determina Quanto Spendi",
+  "number": 2,
+  "slug": "effetto-ancoraggio",
+  "description": "In questo episodio esploriamo l'effetto ancoraggio, un bias cognitivo per cui la prima informazione numerica che riceviamo influenza in modo sproporzionato le nostre decisioni successive, anche in contesti completamente diversi.",
+  "short_description": "Perché la prima cifra che vediamo determina quanto siamo disposti a spendere?",
+  "host": "Rob Pac",
+  "duration": "15:00",
+  "publish_date": "",
+  "tags": [
+    "effetto ancoraggio",
+    "bias cognitivi",
+    "negoziazione",
+    "decisioni economiche",
+    "psicologia",
+    "kahneman",
+    "tversky"
+  ],
+  "resources": [
+    {
+      "title": "Thinking, Fast and Slow",
+      "author": "Daniel Kahneman",
+      "type": "book"
+    },
+    {
+      "title": "Judgment under Uncertainty: Heuristics and Biases",
+      "author": "Tversky & Kahneman",
+      "type": "research paper",
+      "year": 1974
+    },
+    {
+      "title": "Predictably Irrational",
+      "author": "Dan Ariely",
+      "type": "book"
+    }
+  ],
+  "audio": {
+    "intro_timing": "00:00 - 00:20",
+    "main_content_timing": "00:20 - 14:30",
+    "outro_timing": "14:30 - 15:00",
+    "background_music": {
+      "intro": "intro_theme.mp3",
+      "main": "deep_thought.mp3",
+      "outro": "outro_theme.mp3"
+    }
+  },
+  "social_media_content": {
+    "quote1": "Ti sei mai chiesto perché i negozi mostrano prima il prezzo originale barrato e poi quello scontato?",
+    "quote2": "Un numero completamente arbitrario può influenzare significativamente quanto sei disposto a pagare per qualcosa.",
+    "quote3": "Nei ristoranti, il piatto più costoso del menu spesso esiste solo per farti sentire più ragionevoli gli altri prezzi."
+  },
+  "keywords_for_seo": "effetto ancoraggio, bias cognitivi, negoziazione prezzi, psicologia economica, decisioni di acquisto, marketing psicologico, tecniche di vendita"
+}

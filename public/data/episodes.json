@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1",
+    "metadata": {
+      "titolo": "Episodio 1 (Titolo non valido)",
+      "descrizione_breve": "Sottotitolo generico inserito per evitare errori JSON"
+    },
+    "script": ""
+  },
+  {
+    "id": "2",
+    "metadata": {
+      "titolo": "Episodio 2 (Titolo non valido)",
+      "descrizione_breve": "Sottotitolo generico inserito per evitare errori JSON"
+    },
+    "script": ""
+  },
+  {
+    "id": "3",
+    "metadata": {
+      "titolo": "Episodio 3 (Titolo non valido)",
+      "descrizione_breve": "Sottotitolo generico inserito per evitare errori JSON"
+    },
+    "script": ""
+  },
+  {
+    "id": "4",
+    "metadata": {
+      "titolo": "Episodio 4 (Titolo non valido)",
+      "descrizione_breve": "Sottotitolo generico inserito per evitare errori JSON"
+    },
+    "script": ""
+  },
+  {
+    "id": "5",
+    "metadata": {
+      "titolo": "Episodio 5 (Titolo non valido)",
+      "descrizione_breve": "Sottotitolo generico inserito per evitare errori JSON"
+    },
+    "script": ""
+  },
+  {
+    "id": "6",
+    "metadata": {
+      "titolo": "Episodio 6 (Titolo non valido)",
+      "descrizione_breve": "Sottotitolo generico inserito per evitare errori JSON"
+    },
+    "script": ""
+  },
+  {
+    "id": "7",
+    "metadata": {
+      "titolo": "Episodio 7 (Titolo non valido)",
+      "descrizione_breve": "Sottotitolo generico inserito per evitare errori JSON"
+    },
+    "script": ""
+  },
+  {
+    "id": "8",
+    "metadata": {
+      "titolo": "Episodio 8 (Titolo non valido)",
+      "descrizione_breve": "Sottotitolo generico inserito per evitare errori JSON"
+    },
+    "script": ""
+  },
+  {
+    "id": "9",
+    "metadata": {
+      "titolo": "Episodio 9 (Titolo non valido)",
+      "descrizione_breve": "Sottotitolo generico inserito per evitare errori JSON"
+    },
+    "script": ""
+  },
+  {
+    "id": "10",
+    "metadata": {
+      "titolo": "Episodio 10 (Titolo non valido)",
+      "descrizione_breve": "Sottotitolo generico inserito per evitare errori JSON"
+    },
+    "script": ""
+  }
+]

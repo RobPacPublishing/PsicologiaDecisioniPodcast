@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psicologia delle Decisioni Quotidiane - Podcast Manager</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Firebase App (the core Firebase SDK) -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    
+    <!-- Firebase Authentication -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    
+    <!-- Your Firebase configuration -->
+    <script src="src/js/firebase-config.js"></script>
+    
+    <!-- Authentication check -->
+    <script src="src/js/auth-check.js"></script>
+</head>
+<body>
+    <div class="container" style="display: none;"> <!-- Hidden until auth check completes -->
+        <header>
+            <h1>Psicologia delle Decisioni Quotidiane</h1>
+            <h2>Come Pensiamo Senza Pensare</h2>
+            <p>Podcast Manager</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#" class="active" data-section="episodes"><i class="fas fa-list"></i> Episodi</a></li>
+                <li><a href="#" data-section="assets"><i class="fas fa-music"></i> Asset</a></li>
+                <li><a href="#" data-section="calendar"><i class="fas fa-calendar"></i> Calendario</a></li>
+                <li><a href="#" data-section="export"><i class="fas fa-file-export"></i> Esporta</a></li>
+                <!-- Il pulsante di logout verrà aggiunto dinamicamente qui -->
+            </ul>
+        </nav>
+
+        <main>
+            <!-- Sezione Episodi -->
+            <section id="episodes" class="active">
+                <h2>Episodi Disponibili</h2>
+                <div class="search-bar">
+                    <input type="text" id="episode-search" placeholder="Cerca episodi...">
+                    <button id="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="episodes-container">
+                    <!-- Gli episodi verranno caricati qui dinamicamente -->
+                    <div class="episode-card">
+                        <div class="episode-number">01</div>
+                        <div class="episode-info">
+                            <h3>L'Euristica della Disponibilità</h3>
+                            <p>Perché temiamo squali più degli incidenti domestici</p>
+                        </div>
+                        <div class="episode-actions">
+                            <button class="view-btn"><i class="fas fa-eye"></i></button>
+                            <button class="edit-btn"><i class="fas fa-edit"></i></button>
+                            <button class="export-btn"><i class="fas fa-file-export"></i></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Placeholder per altri episodi -->
+                    <div class="episode-card">
+                        <div class="episode-number">02</div>
+                        <div class="episode-info">
+                            <h3>L'Effetto Ancoraggio</h3>
+                            <p>Come un numero casuale determina quanto spendi</p>
+                        </div>
+                        <div class="episode-actions">
+                            <button class="view-btn"><i class="fas fa-eye"></i></button>
+                            <button class="edit-btn"><i class="fas fa-edit"></i></button>
+                            <button class="export-btn"><i class="fas fa-file-export"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sezione Asset -->
+            <section id="assets">
+                <h2>Asset Multimedia</h2>
+                
+                <div class="asset-categories">
+                    <button class="category-btn active" data-category="jingles">Jingles</button>
+                    <button class="category-btn" data-category="music">Musica di Sottofondo</button>
+                    <button class="category-btn" data-category="images">Immagini</button>
+                    <button class="category-btn" data-category="voices">Voci</button>
+                </div>
+                
+                <div class="assets-container">
+                    <!-- Assets verranno caricati qui dinamicamente -->
+                    <div class="asset-card" data-type="jingles">
+                        <div class="asset-preview">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="asset-info">
+                            <h3>Intro Theme</h3>
+                            <p>20 secondi - Apertura</p>
+                        </div>
+                        <div class="asset-actions">
+                            <button class="play-btn"><i class="fas fa-play"></i></button>
+                            <button class="download-btn"><i class="fas fa-download"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sezione Calendario -->
+            <section id="calendar">
+                <h2>Calendario Pubblicazioni</h2>
+                <div class="calendar-container">
+                    <!-- Placeholder per calendario -->
+                    <div class="calendar-header">
+                        <button id="prev-month"><i class="fas fa-chevron-left"></i></button>
+                        <h3 id="current-month">Aprile 2025</h3>
+                        <button id="next-month"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="calendar-grid">
+                        <!-- Il calendario verrà generato qui -->
+                    </div>
+                </div>
+                
+                <div class="scheduled-episodes">
+                    <h3>Episodi Programmati</h3>
+                    <ul>
+                        <li>
+                            <span class="date">15 Aprile 2025</span>
+                            <span class="title">L'Euristica della Disponibilità</span>
+                            <div class="actions">
+                                <button><i class="fas fa-edit"></i></button>
+                                <button><i class="fas fa-trash"></i></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Sezione Esporta -->
+            <section id="export">
+                <h2>Esporta Contenuti</h2>
+                
+                <div class="export-options">
+                    <div class="export-option">
+                        <i class="fas fa-podcast"></i>
+                        <h3>Anchor/Spotify</h3>
+                        <p>Carica direttamente su Anchor per la distribuzione</p>
+                        <button>Connetti</button>
+                    </div>
+                    
+                    <div class="export-option">
+                        <i class="fas fa-file-audio"></i>
+                        <h3>File Audio</h3>
+                        <p>Esporta solo il file audio MP3</p>
+                        <button>Esporta</button>
+                    </div>
+                    
+                    <div class="export-option">
+                        <i class="fas fa-file-alt"></i>
+                        <h3>Script</h3>
+                        <p>Esporta lo script testuale</p>
+                        <button>Esporta</button>
+                    </div>
+                    
+                    <div class="export-option">
+                        <i class="fas fa-file-archive"></i>
+                        <h3>Pacchetto Completo</h3>
+                        <p>Script, audio e metadati</p>
+                        <button>Esporta</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div id="episode-detail-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Dettaglio Episodio</h2>
+                
+                <div class="episode-detail-container">
+                    <!-- Contenuto dettagliato dell'episodio -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/js/main.js"></script>
+    <script src="src/js/podcast-manager.js"></script>
+</body>
+</html>

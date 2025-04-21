@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Psicologia delle Decisioni Quotidiane</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #c0d6df 0%, #3a6ea5 100%);
+        }
+        .login-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            width: 100%;
+            max-width: 400px;
+        }
+        h1 {
+            color: #3a6ea5;
+            margin-top: 0;
+            text-align: center;
+        }
+        h2 {
+            font-size: 1rem;
+            font-weight: normal;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #666;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #3a6ea5;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #004e98;
+        }
+        .error {
+            color: red;
+            margin-bottom: 15px;
+            display: none;
+        }
+        .spinner {
+            display: none;
+            margin: 15px auto;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #3a6ea5;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Psicologia delle Decisioni Quotidiane</h1>
+        <h2>Accesso riservato</h2>
+        
+        <div id="error-message" class="error"></div>
+        
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+        <button id="login-btn">Accedi</button>
+        
+        <div id="spinner" class="spinner"></div>
+    </div>
+
+    <!-- Firebase App (the core Firebase SDK) -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    
+    <!-- Firebase Authentication -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    
+    <script>
+        // Firebase configuration - inlined to avoid loading issues
+        const firebaseConfig = {
+          apiKey: "AIzaSyAfTqsU3QDneKqwXg8IvZra_I4BEJy9GPM",
+          authDomain: "psicologia-decisioni-podcast.firebaseapp.com",
+          projectId: "psicologia-decisioni-podcast",
+          storageBucket: "psicologia-decisioni-podcast.firebasestorage.app",
+          messagingSenderId: "852988062243",
+          appId: "1:852988062243:web:efe56e3f9552f18250df96"
+        };
+        
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        
+        document.addEventListener("DOMContentLoaded", function() {
+            const emailInput = document.getElementById("email");
+            const passwordInput = document.getElementById("password");
+            const loginBtn = document.getElementById("login-btn");
+            const errorMessage = document.getElementById("error-message");
+            const spinner = document.getElementById("spinner");
+            
+            // Check if already logged in
+            firebase.auth().onAuthStateChanged(function(user) {
+                if (user) {
+                    // User is signed in, redirect to main page
+                    window.location.href = "index.html";
+                }
+            });
+            
+            loginBtn.addEventListener("click", function() {
+                const email = emailInput.value.trim();
+                const password = passwordInput.value;
+                
+                // Simple validation
+                if (!email || !password) {
+                    showError("Per favore, inserisci email e password");
+                    return;
+                }
+                
+                // Show spinner, hide error
+                spinner.style.display = "block";
+                errorMessage.style.display = "none";
+                
+                // Sign in with Firebase
+                firebase.auth().signInWithEmailAndPassword(email, password)
+                    .then(function() {
+                        // Redirect to main page
+                        window.location.href = "index.html";
+                    })
+                    .catch(function(error) {
+                        // Handle errors
+                        console.error("Error during login:", error);
+                        let errorMsg = "Errore di accesso. Controlla email e password.";
+                        if (error.code === "auth/user-not-found" || error.code === "auth/wrong-password") {
+                            errorMsg = "Email o password non validi";
+                        }
+                        showError(errorMsg);
+                    });
+            });
+            
+            function showError(message) {
+                spinner.style.display = "none";
+                errorMessage.textContent = message;
+                errorMessage.style.display = "block";
+            }
+        });
+    </script>
+</body>
+</html>
