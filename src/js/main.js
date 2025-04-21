@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch('/api/episodes')
+    fetch('/data/episodes.json')
         .then(response => {
             if (!response.ok) throw new Error('Network response was not ok');
             return response.json();
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .catch(error => {
             document.querySelector('.episodes-container').innerHTML = `
-                <p style="color:red;">Errore nel caricamento: Impossibile caricare gli episodi (${error.message})</p>
+                <p style="color:red;">Errore nel caricamento: ${error.message}</p>
             `;
         });
 });
